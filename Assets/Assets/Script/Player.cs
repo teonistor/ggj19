@@ -4,6 +4,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour {
+    static readonly float velocityMagnitudeSafe = 1.5f;
+
     static readonly Vector3 pickedUpLocalPosition = new Vector3(0f, 1.9f, 0f);
 
     const string verticalAxTemplate = "VerticalP{0}",
@@ -65,8 +67,9 @@ public class Player : MonoBehaviour {
     /// <param name="collision"></param>
     void OnCollisionEnter (Collision collision) {
         Resource resource = collision.collider.GetComponent<Resource>();
-        if (resource != null) {
-            if (resource.tag.Equals(Resource.resourceTag)) {
+        if (resource != null) {                
+            Rigidbody rbObject = resource.GetComponent<Rigidbody>();
+            if (resource.tag.Equals(Resource.resourceTag) && rbObject.velocity.magnitude < velocityMagnitudeSafe) {
                 if (pickedUp == null) {
                     pickedUp = resource.PickUp(transform, pickedUpLocalPosition, myResourceTag);
                 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public class Resource : MonoBehaviour {
-    const float throwVelocity = 5f;
+    const float throwVelocity = 10f;
     internal const string p1ResourceTag = "Player 1 resource",
                           p2ResourceTag = "Player 2 resource",
                             resourceTag = "Resource";
@@ -26,15 +26,17 @@ public class Resource : MonoBehaviour {
         //cld.isTrigger = false;
         //rb.useGravity = true;
         rb.isKinematic = false;
-        rb.velocity = Vector3.RotateTowards(direction, Vector3.up, Mathf.PI / 6f, float.PositiveInfinity)
+        rb.velocity = Vector3.RotateTowards(direction, Vector3.up, Mathf.PI / 20f, float.PositiveInfinity)
             . normalized
             * throwVelocity;
+        
 
         return null; // Asigned in Player
     }
 
     internal Resource PickUp (Transform newParent, Vector3 newLocalPosition, string newTag) {
         //rb.useGravity = false;
+        rb.isKinematic = true;
         transform.parent = newParent;
         transform.localPosition = newLocalPosition;
         tag = newTag;
@@ -44,7 +46,6 @@ public class Resource : MonoBehaviour {
 
     void OnCollisionEnter (Collision collision) {
         if (collision.collider.tag == "Ground") {
-            rb.isKinematic = true;
             //cld.isTrigger = true;
             //gameObject.layer = defaultLayer;
             gameObject.tag = resourceTag;
