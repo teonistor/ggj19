@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Player 1 resource
+  - Player 2 resource
+  - Resource
   layers:
   - Default
   - TransparentFX
@@ -14,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - Player 1
-  - Player 2
+  - 
+  - 
   - 
   - 
   - 
