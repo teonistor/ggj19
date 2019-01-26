@@ -32,7 +32,6 @@ public class Player : MonoBehaviour {
         myResourceTag = string.Format(myResourceTagTemplate, playerNum);
 
         rb = GetComponent<Rigidbody>();
-
     }
 	
 	void Update () {
@@ -45,17 +44,7 @@ public class Player : MonoBehaviour {
 
     }
 
-
-    void OnTriggerEnter (Collider other) {
-        pickedUp = other.GetComponent<Resource>();
-        if (pickedUp != null) {
-            pickedUp.transform.parent = transform;
-            pickedUp.transform.localPosition = pickedUpLocalPosition;
-            pickedUp.gameObject.layer = gameObject.layer;
-        }
-    }
-
-
+    
     //function for delivering resources to tribe
     void DeliverResources() {
         if (this.pickedUp != null && this.pickedUp.value > 0) {
@@ -75,8 +64,12 @@ public class Player : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Check if we collided with a resource. If it is just lying around (tagged as "Resource"), collect it; otherwise
+    /// it means it was thrown by the other player and hit us
+    /// </summary>
+    /// <param name="collision"></param>
     void OnCollisionEnter (Collision collision) {
-  
         Resource resource = collision.collider.GetComponent<Resource>();
         if (resource != null) {
             if (resource.tag.Equals(Resource.resourceTag)) {
