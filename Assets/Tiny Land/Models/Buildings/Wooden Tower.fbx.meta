@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 83c8d56d101f71d40992f230abcd7c3c
+timeCreated: 1524665213
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Buiding_Phase
+    100002: Carcass
+    100004: Destruction_phase_1
+    100006: Destruction_phase_1 1
+    100008: Destruction_phase_2
+    100010: Destruction_phase_2 1
+    100012: First_Floor
+    100014: Flag_1
+    100016: Flag_1 1
+    100018: Flag_1 2
+    100020: Flag_2
+    100022: Flag_2 1
+    100024: Flag_2 2
+    100026: Flag_3
+    100028: Flag_3 1
+    100030: Flag_3 2
+    100032: Flag_4
+    100034: Flag_4 1
+    100036: Flag_x_2
+    100038: Flags
+    100040: Ground
+    100042: Scaffold
+    100044: //RootNode
+    100046: Building_Phase
+    100048: Building_phase
+    400000: Buiding_Phase
+    400002: Carcass
+    400004: Destruction_phase_1
+    400006: Destruction_phase_1 1
+    400008: Destruction_phase_2
+    400010: Destruction_phase_2 1
+    400012: First_Floor
+    400014: Flag_1
+    400016: Flag_1 1
+    400018: Flag_1 2
+    400020: Flag_2
+    400022: Flag_2 1
+    400024: Flag_2 2
+    400026: Flag_3
+    400028: Flag_3 1
+    400030: Flag_3 2
+    400032: Flag_4
+    400034: Flag_4 1
+    400036: Flag_x_2
+    400038: Flags
+    400040: Ground
+    400042: Scaffold
+    400044: //RootNode
+    400046: Building_Phase
+    400048: Building_phase
+    2100000: All_Color_mtl
+    2100002: Flag_mtl
+    2300000: Carcass
+    2300002: Destruction_phase_1 1
+    2300004: Destruction_phase_2 1
+    2300006: First_Floor
+    2300008: Flag_1
+    2300010: Flag_1 1
+    2300012: Flag_1 2
+    2300014: Flag_2
+    2300016: Flag_2 1
+    2300018: Flag_2 2
+    2300020: Flag_3
+    2300022: Flag_3 1
+    2300024: Flag_3 2
+    2300026: Flag_4
+    2300028: Flag_4 1
+    2300030: Flag_x_2
+    2300032: Ground
+    2300034: Scaffold
+    3300000: Carcass
+    3300002: Destruction_phase_1 1
+    3300004: Destruction_phase_2 1
+    3300006: First_Floor
+    3300008: Flag_1
+    3300010: Flag_1 1
+    3300012: Flag_1 2
+    3300014: Flag_2
+    3300016: Flag_2 1
+    3300018: Flag_2 2
+    3300020: Flag_3
+    3300022: Flag_3 1
+    3300024: Flag_3 2
+    3300026: Flag_4
+    3300028: Flag_4 1
+    3300030: Flag_x_2
+    3300032: Ground
+    3300034: Scaffold
+    4300000: Ground
+    4300002: First_Floor
+    4300004: Flag_1
+    4300006: Flag_2
+    4300008: Flag_3
+    4300010: Flag_4
+    4300012: Scaffold
+    4300014: Carcass
+    4300016: Destruction_phase_1
+    4300018: Flag_4
+    4300020: Flag_3
+    4300022: Flag_2
+    4300024: Flag_1
+    4300026: Destruction_phase_2
+    4300028: Flag_x_2
+    4300030: Flag_3
+    4300032: Flag_2
+    4300034: Flag_1
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

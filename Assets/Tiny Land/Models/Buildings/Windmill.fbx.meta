@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: 1aaeb86c8fd163c4d83295257ea71d8f
+timeCreated: 1521999779
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Ash
+    100002: Building_phase
+    100004: Carcass
+    100006: Destruction_phase_1
+    100008: Destruction_phase_1 1
+    100010: Destruction_phase_2
+    100012: Destruction_phase_2 1
+    100014: Destruction_phase_3
+    100016: Destruction_phase_3 1
+    100018: First_Floor
+    100020: Flag_1
+    100022: Flag_1 1
+    100024: Flag_1 2
+    100026: Flag_1 3
+    100028: Flag_2
+    100030: Flag_2 1
+    100032: Flag_2 2
+    100034: Flag_2 3
+    100036: Flag_Element
+    100038: Flags
+    100040: Foundation
+    100042: Ground
+    100044: Roof
+    100046: Scaffold
+    100048: Second_Floor
+    100050: //RootNode
+    100052: Windmill_wings
+    400000: Ash
+    400002: Building_phase
+    400004: Carcass
+    400006: Destruction_phase_1
+    400008: Destruction_phase_1 1
+    400010: Destruction_phase_2
+    400012: Destruction_phase_2 1
+    400014: Destruction_phase_3
+    400016: Destruction_phase_3 1
+    400018: First_Floor
+    400020: Flag_1
+    400022: Flag_1 1
+    400024: Flag_1 2
+    400026: Flag_1 3
+    400028: Flag_2
+    400030: Flag_2 1
+    400032: Flag_2 2
+    400034: Flag_2 3
+    400036: Flag_Element
+    400038: Flags
+    400040: Foundation
+    400042: Ground
+    400044: Roof
+    400046: Scaffold
+    400048: Second_Floor
+    400050: //RootNode
+    400052: Windmill_wings
+    2100000: All_Color_mtl
+    2100002: Town_Center_mtl
+    2100004: Flag_mtl
+    2300000: Ash
+    2300002: Carcass
+    2300004: Destruction_phase_1 1
+    2300006: Destruction_phase_2 1
+    2300008: Destruction_phase_3 1
+    2300010: First_Floor
+    2300012: Flag_1
+    2300014: Flag_1 1
+    2300016: Flag_1 2
+    2300018: Flag_1 3
+    2300020: Flag_2
+    2300022: Flag_2 1
+    2300024: Flag_2 2
+    2300026: Flag_2 3
+    2300028: Flag_Element
+    2300030: Foundation
+    2300032: Ground
+    2300034: Roof
+    2300036: Scaffold
+    2300038: Second_Floor
+    2300040: Windmill_wings
+    3300000: Ash
+    3300002: Carcass
+    3300004: Destruction_phase_1 1
+    3300006: Destruction_phase_2 1
+    3300008: Destruction_phase_3 1
+    3300010: First_Floor
+    3300012: Flag_1
+    3300014: Flag_1 1
+    3300016: Flag_1 2
+    3300018: Flag_1 3
+    3300020: Flag_2
+    3300022: Flag_2 1
+    3300024: Flag_2 2
+    3300026: Flag_2 3
+    3300028: Flag_Element
+    3300030: Foundation
+    3300032: Ground
+    3300034: Roof
+    3300036: Scaffold
+    3300038: Second_Floor
+    3300040: Windmill_wings
+    4300000: Windmill_wings
+    4300002: Ground
+    4300004: Carcass
+    4300006: Second_Floor
+    4300008: First_Floor
+    4300010: Roof
+    4300012: Foundation
+    4300014: Flag_Element
+    4300016: Flag_1
+    4300018: Flag_2
+    4300020: Scaffold
+    4300022: Destruction_phase_1
+    4300024: Flag_1
+    4300026: Flag_2
+    4300028: Destruction_phase_2
+    4300030: Flag_2
+    4300032: Flag_1
+    4300034: Destruction_phase_3
+    4300036: Flag_2
+    4300038: Flag_1
+    4300040: Ash
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: All_Color_mtl
+    second: {fileID: 2100000, guid: f2411d56cf2e2b24ea5e56d791298ee4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flag_mtl
+    second: {fileID: 2100000, guid: 192c5f9900fc5fd46920e4f201210173, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Town_Center_mtl
+    second: {fileID: 2100000, guid: f2411d56cf2e2b24ea5e56d791298ee4, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

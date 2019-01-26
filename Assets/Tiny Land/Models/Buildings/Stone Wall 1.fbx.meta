@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 02a894a6a45df97469dee76f3542f422
+timeCreated: 1524420806
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Building_phase
+    100002: Destruction_phase_1
+    100004: Destruction_phase_1 1
+    100006: Destruction_phase_2
+    100008: Destruction_phase_2 1
+    100010: Destruction_phase_3
+    100012: Destruction_phase_3 1
+    100014: Flag_1
+    100016: Flag_1 1
+    100018: Flag_x
+    100020: Flag_x 1
+    100022: //RootNode
+    100024: Wall
+    100026: Flags
+    400000: Building_phase
+    400002: Destruction_phase_1
+    400004: Destruction_phase_1 1
+    400006: Destruction_phase_2
+    400008: Destruction_phase_2 1
+    400010: Destruction_phase_3
+    400012: Destruction_phase_3 1
+    400014: Flag_1
+    400016: Flag_1 1
+    400018: Flag_x
+    400020: Flag_x 1
+    400022: //RootNode
+    400024: Wall
+    400026: Flags
+    2100000: All_Color_mtl
+    2300000: Destruction_phase_1 1
+    2300002: Destruction_phase_2 1
+    2300004: Destruction_phase_3 1
+    2300006: Flag_1
+    2300008: Flag_1 1
+    2300010: Flag_x
+    2300012: Flag_x 1
+    2300014: Wall
+    3300000: Destruction_phase_1 1
+    3300002: Destruction_phase_2 1
+    3300004: Destruction_phase_3 1
+    3300006: Flag_1
+    3300008: Flag_1 1
+    3300010: Flag_x
+    3300012: Flag_x 1
+    3300014: Wall
+    4300000: Wall
+    4300002: Flag_1
+    4300004: Flag_1
+    4300006: Destruction_phase_1
+    4300008: Destruction_phase_2
+    4300010: Flag_x
+    4300012: Flag_x
+    4300014: Destruction_phase_3
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

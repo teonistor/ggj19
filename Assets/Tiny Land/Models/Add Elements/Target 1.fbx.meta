@@ -1,0 +1,503 @@
+fileFormatVersion: 2
+guid: 29d79c997efd41f419514e1b2d12d685
+timeCreated: 1520353847
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Beam_153
+    100004: Beam_178
+    100006: Beam_180
+    100008: Beam_184
+    100010: Beam_185
+    100012: Beam_188
+    100014: Beam_214
+    100016: Beam_215
+    100018: Beam_216
+    100020: Beam_217
+    100022: Beam_218
+    100024: Beam_222
+    100026: Beam_223
+    100028: Beam_224
+    100030: Beam_225
+    100032: Beam_226
+    100034: Beam_227
+    100036: Beam_229
+    100038: Beam_232
+    100040: Beam_233
+    100042: Beam_234
+    100044: Beam_235
+    100046: Beam_289
+    100048: Beam_289 1
+    100050: Beam_291
+    100052: Beam_291 1
+    100054: Beam_292
+    100056: Beam_292 1
+    100058: Beam_293
+    100060: Beam_294
+    100062: Beam_295
+    100064: Beam_296
+    100066: Beam_297
+    100068: Beam_298
+    100070: Beam_299
+    100072: Beam_300
+    100074: Beam_301
+    100076: Beam_302
+    100078: Beam_303
+    100080: Beam_304
+    100082: Beam_305
+    100084: Beam_83
+    100086: Beam_83 1
+    100088: Ground4
+    100090: group212
+    100092: group213
+    100094: group228
+    100096: group231
+    100098: pCube1437
+    100100: pCube1475
+    100102: pCube1475 1
+    100104: pCube1476
+    100106: pCube1476 1
+    100108: pCube1478
+    100110: pCube1478 1
+    100112: pCube1480
+    100114: pCube1480 1
+    100116: pCube1481
+    100118: pCube1481 1
+    100120: pCube1482
+    100122: pCube1482 1
+    100124: pCube1483
+    100126: pCube1484
+    100128: pCube384
+    100130: pCube404
+    100132: pCube515
+    100134: polySurface149
+    100136: polySurface149 1
+    100138: polySurface153
+    100140: polySurface174
+    100142: polySurface175
+    100144: polySurface176
+    100146: polySurface177
+    100148: polySurface178
+    100150: polySurface179
+    100152: polySurface180
+    100154: polySurface181
+    100156: pPlane11
+    100158: pPlane16
+    100160: pPlane17
+    100162: pPlane18
+    100164: Stone_Tower
+    100166: Stone_Wall
+    100168: Stone_Wall2
+    400000: //RootNode
+    400002: Beam_153
+    400004: Beam_178
+    400006: Beam_180
+    400008: Beam_184
+    400010: Beam_185
+    400012: Beam_188
+    400014: Beam_214
+    400016: Beam_215
+    400018: Beam_216
+    400020: Beam_217
+    400022: Beam_218
+    400024: Beam_222
+    400026: Beam_223
+    400028: Beam_224
+    400030: Beam_225
+    400032: Beam_226
+    400034: Beam_227
+    400036: Beam_229
+    400038: Beam_232
+    400040: Beam_233
+    400042: Beam_234
+    400044: Beam_235
+    400046: Beam_289
+    400048: Beam_289 1
+    400050: Beam_291
+    400052: Beam_291 1
+    400054: Beam_292
+    400056: Beam_292 1
+    400058: Beam_293
+    400060: Beam_294
+    400062: Beam_295
+    400064: Beam_296
+    400066: Beam_297
+    400068: Beam_298
+    400070: Beam_299
+    400072: Beam_300
+    400074: Beam_301
+    400076: Beam_302
+    400078: Beam_303
+    400080: Beam_304
+    400082: Beam_305
+    400084: Beam_83
+    400086: Beam_83 1
+    400088: Ground4
+    400090: group212
+    400092: group213
+    400094: group228
+    400096: group231
+    400098: pCube1437
+    400100: pCube1475
+    400102: pCube1475 1
+    400104: pCube1476
+    400106: pCube1476 1
+    400108: pCube1478
+    400110: pCube1478 1
+    400112: pCube1480
+    400114: pCube1480 1
+    400116: pCube1481
+    400118: pCube1481 1
+    400120: pCube1482
+    400122: pCube1482 1
+    400124: pCube1483
+    400126: pCube1484
+    400128: pCube384
+    400130: pCube404
+    400132: pCube515
+    400134: polySurface149
+    400136: polySurface149 1
+    400138: polySurface153
+    400140: polySurface174
+    400142: polySurface175
+    400144: polySurface176
+    400146: polySurface177
+    400148: polySurface178
+    400150: polySurface179
+    400152: polySurface180
+    400154: polySurface181
+    400156: pPlane11
+    400158: pPlane16
+    400160: pPlane17
+    400162: pPlane18
+    400164: Stone_Tower
+    400166: Stone_Wall
+    400168: Stone_Wall2
+    2100000: All_Color_mtl
+    2100002: Town_Center_mtl
+    2300000: //RootNode
+    2300002: Beam_153
+    2300004: Beam_178
+    2300006: Beam_180
+    2300008: Beam_184
+    2300010: Beam_185
+    2300012: Beam_188
+    2300014: Beam_214
+    2300016: Beam_215
+    2300018: Beam_216
+    2300020: Beam_217
+    2300022: Beam_218
+    2300024: Beam_222
+    2300026: Beam_223
+    2300028: Beam_224
+    2300030: Beam_225
+    2300032: Beam_226
+    2300034: Beam_227
+    2300036: Beam_229
+    2300038: Beam_232
+    2300040: Beam_233
+    2300042: Beam_234
+    2300044: Beam_235
+    2300046: Beam_289
+    2300048: Beam_289 1
+    2300050: Beam_291
+    2300052: Beam_291 1
+    2300054: Beam_292
+    2300056: Beam_292 1
+    2300058: Beam_293
+    2300060: Beam_294
+    2300062: Beam_295
+    2300064: Beam_296
+    2300066: Beam_297
+    2300068: Beam_298
+    2300070: Beam_299
+    2300072: Beam_300
+    2300074: Beam_301
+    2300076: Beam_302
+    2300078: Beam_303
+    2300080: Beam_304
+    2300082: Beam_305
+    2300084: Beam_83
+    2300086: Beam_83 1
+    2300088: Ground4
+    2300090: pCube1437
+    2300092: pCube1475
+    2300094: pCube1475 1
+    2300096: pCube1476
+    2300098: pCube1476 1
+    2300100: pCube1478
+    2300102: pCube1478 1
+    2300104: pCube1480
+    2300106: pCube1480 1
+    2300108: pCube1481
+    2300110: pCube1481 1
+    2300112: pCube1482
+    2300114: pCube1482 1
+    2300116: pCube1483
+    2300118: pCube1484
+    2300120: pCube384
+    2300122: pCube404
+    2300124: pCube515
+    2300126: polySurface149
+    2300128: polySurface149 1
+    2300130: polySurface153
+    2300132: polySurface174
+    2300134: polySurface175
+    2300136: polySurface176
+    2300138: polySurface177
+    2300140: polySurface178
+    2300142: polySurface179
+    2300144: polySurface180
+    2300146: polySurface181
+    2300148: pPlane11
+    2300150: pPlane16
+    2300152: pPlane17
+    2300154: pPlane18
+    3300000: //RootNode
+    3300002: Beam_153
+    3300004: Beam_178
+    3300006: Beam_180
+    3300008: Beam_184
+    3300010: Beam_185
+    3300012: Beam_188
+    3300014: Beam_214
+    3300016: Beam_215
+    3300018: Beam_216
+    3300020: Beam_217
+    3300022: Beam_218
+    3300024: Beam_222
+    3300026: Beam_223
+    3300028: Beam_224
+    3300030: Beam_225
+    3300032: Beam_226
+    3300034: Beam_227
+    3300036: Beam_229
+    3300038: Beam_232
+    3300040: Beam_233
+    3300042: Beam_234
+    3300044: Beam_235
+    3300046: Beam_289
+    3300048: Beam_289 1
+    3300050: Beam_291
+    3300052: Beam_291 1
+    3300054: Beam_292
+    3300056: Beam_292 1
+    3300058: Beam_293
+    3300060: Beam_294
+    3300062: Beam_295
+    3300064: Beam_296
+    3300066: Beam_297
+    3300068: Beam_298
+    3300070: Beam_299
+    3300072: Beam_300
+    3300074: Beam_301
+    3300076: Beam_302
+    3300078: Beam_303
+    3300080: Beam_304
+    3300082: Beam_305
+    3300084: Beam_83
+    3300086: Beam_83 1
+    3300088: Ground4
+    3300090: pCube1437
+    3300092: pCube1475
+    3300094: pCube1475 1
+    3300096: pCube1476
+    3300098: pCube1476 1
+    3300100: pCube1478
+    3300102: pCube1478 1
+    3300104: pCube1480
+    3300106: pCube1480 1
+    3300108: pCube1481
+    3300110: pCube1481 1
+    3300112: pCube1482
+    3300114: pCube1482 1
+    3300116: pCube1483
+    3300118: pCube1484
+    3300120: pCube384
+    3300122: pCube404
+    3300124: pCube515
+    3300126: polySurface149
+    3300128: polySurface149 1
+    3300130: polySurface153
+    3300132: polySurface174
+    3300134: polySurface175
+    3300136: polySurface176
+    3300138: polySurface177
+    3300140: polySurface178
+    3300142: polySurface179
+    3300144: polySurface180
+    3300146: polySurface181
+    3300148: pPlane11
+    3300150: pPlane16
+    3300152: pPlane17
+    3300154: pPlane18
+    4300000: Target_1
+    4300002: pCube1476
+    4300004: pCube1478
+    4300006: pCube1482
+    4300008: pCube1481
+    4300010: pCube1480
+    4300012: polySurface149
+    4300014: pCube1475
+    4300016: Beam_289
+    4300018: Beam_291
+    4300020: Beam_83
+    4300022: Beam_292
+    4300024: Ground4
+    4300026: Beam_178
+    4300028: Beam_180
+    4300030: Beam_185
+    4300032: Beam_184
+    4300034: Beam_188
+    4300036: Beam_214
+    4300038: Beam_215
+    4300040: Beam_216
+    4300042: Beam_217
+    4300044: Beam_218
+    4300046: Beam_222
+    4300048: Beam_223
+    4300050: Beam_224
+    4300052: Beam_225
+    4300054: Beam_226
+    4300056: Beam_227
+    4300058: Beam_229
+    4300060: Beam_232
+    4300062: pCube1437
+    4300064: Beam_233
+    4300066: pPlane16
+    4300068: Beam_234
+    4300070: pPlane17
+    4300072: Beam_235
+    4300074: pPlane18
+    4300076: Beam_153
+    4300078: pPlane11
+    4300080: Beam_293
+    4300082: Beam_294
+    4300084: pCube404
+    4300086: pCube515
+    4300088: pCube384
+    4300090: polySurface174
+    4300092: polySurface175
+    4300094: polySurface176
+    4300096: polySurface177
+    4300098: polySurface178
+    4300100: polySurface179
+    4300102: polySurface180
+    4300104: polySurface181
+    4300106: pCube1484
+    4300108: pCube1483
+    4300110: polySurface153
+    4300112: pCube1476
+    4300114: pCube1478
+    4300116: pCube1482
+    4300118: pCube1481
+    4300120: pCube1480
+    4300122: polySurface149
+    4300124: pCube1475
+    4300126: Beam_289
+    4300128: Beam_291
+    4300130: Beam_83
+    4300132: Beam_292
+    4300134: Beam_305
+    4300136: Beam_295
+    4300138: Beam_296
+    4300140: Beam_297
+    4300142: Beam_298
+    4300144: Beam_302
+    4300146: Beam_301
+    4300148: Beam_300
+    4300150: Beam_299
+    4300152: Beam_303
+    4300154: Beam_304
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: All_Color_mtl
+    second: {fileID: 2100000, guid: f2411d56cf2e2b24ea5e56d791298ee4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Town_Center_mtl
+    second: {fileID: 2100000, guid: f2411d56cf2e2b24ea5e56d791298ee4, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

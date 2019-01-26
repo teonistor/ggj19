@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: d9a52f643ea424e49809cee6febecd11
+timeCreated: 1524394635
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Building_phase
+    100002: Carcass
+    100004: Destruction_phase_1
+    100006: Destruction_phase_1 1
+    100008: Destruction_phase_2
+    100010: Destruction_phase_2 1
+    100012: Destruction_phase_3
+    100014: Destruction_phase_3 1
+    100016: First_Floor
+    100018: Flag_1
+    100020: Flag_1 1
+    100022: Flag_1 2
+    100024: Flag_1 3
+    100026: Flag_2
+    100028: Flag_2 1
+    100030: Flag_2 2
+    100032: Flag_2 3
+    100034: Flag_3
+    100036: Flag_3 1
+    100038: Flag_3 2
+    100040: Flag_3 3
+    100042: Flag_4
+    100044: Flag_4 1
+    100046: Flag_4 2
+    100048: Flag_4 3
+    100050: Flags
+    100052: Foundation
+    100054: Ground
+    100056: polySurface670
+    100058: polySurface671
+    100060: polySurface673
+    100062: polySurface674
+    100064: polySurface675
+    100066: polySurface676
+    100068: polySurface677
+    100070: polySurface678
+    100072: polySurface679
+    100074: polySurface680
+    100076: polySurface681
+    100078: polySurface682
+    100080: polySurface683
+    100082: polySurface684
+    100084: polySurface685
+    100086: polySurface686
+    100088: polySurface687
+    100090: polySurface688
+    100092: polySurface689
+    100094: polySurface690
+    100096: polySurface691
+    100098: polySurface692
+    100100: polySurface693
+    100102: polySurface694
+    100104: polySurface695
+    100106: polySurface696
+    100108: polySurface697
+    100110: polySurface698
+    100112: polySurface699
+    100114: polySurface700
+    100116: polySurface701
+    100118: polySurface702
+    100120: polySurface703
+    100122: polySurface704
+    100124: polySurface705
+    100126: polySurface706
+    100128: polySurface707
+    100130: polySurface708
+    100132: polySurface709
+    100134: polySurface710
+    100136: polySurface712
+    100138: polySurface713
+    100140: polySurface714
+    100142: Scaffold
+    100144: Second_Floor
+    100146: //RootNode
+    100148: transform44
+    100150: Wall
+    100152: Wall 1
+    100154: Wall 2
+    100156: Wall 3
+    400000: Building_phase
+    400002: Carcass
+    400004: Destruction_phase_1
+    400006: Destruction_phase_1 1
+    400008: Destruction_phase_2
+    400010: Destruction_phase_2 1
+    400012: Destruction_phase_3
+    400014: Destruction_phase_3 1
+    400016: First_Floor
+    400018: Flag_1
+    400020: Flag_1 1
+    400022: Flag_1 2
+    400024: Flag_1 3
+    400026: Flag_2
+    400028: Flag_2 1
+    400030: Flag_2 2
+    400032: Flag_2 3
+    400034: Flag_3
+    400036: Flag_3 1
+    400038: Flag_3 2
+    400040: Flag_3 3
+    400042: Flag_4
+    400044: Flag_4 1
+    400046: Flag_4 2
+    400048: Flag_4 3
+    400050: Flags
+    400052: Foundation
+    400054: Ground
+    400056: polySurface670
+    400058: polySurface671
+    400060: polySurface673
+    400062: polySurface674
+    400064: polySurface675
+    400066: polySurface676
+    400068: polySurface677
+    400070: polySurface678
+    400072: polySurface679
+    400074: polySurface680
+    400076: polySurface681
+    400078: polySurface682
+    400080: polySurface683
+    400082: polySurface684
+    400084: polySurface685
+    400086: polySurface686
+    400088: polySurface687
+    400090: polySurface688
+    400092: polySurface689
+    400094: polySurface690
+    400096: polySurface691
+    400098: polySurface692
+    400100: polySurface693
+    400102: polySurface694
+    400104: polySurface695
+    400106: polySurface696
+    400108: polySurface697
+    400110: polySurface698
+    400112: polySurface699
+    400114: polySurface700
+    400116: polySurface701
+    400118: polySurface702
+    400120: polySurface703
+    400122: polySurface704
+    400124: polySurface705
+    400126: polySurface706
+    400128: polySurface707
+    400130: polySurface708
+    400132: polySurface709
+    400134: polySurface710
+    400136: polySurface712
+    400138: polySurface713
+    400140: polySurface714
+    400142: Scaffold
+    400144: Second_Floor
+    400146: //RootNode
+    400148: transform44
+    400150: Wall
+    400152: Wall 1
+    400154: Wall 2
+    400156: Wall 3
+    2100000: All_Color_mtl
+    2100002: Town_Center_mtl
+    2100004: Flag_mtl
+    2300000: Carcass
+    2300002: Destruction_phase_1 1
+    2300004: Destruction_phase_2 1
+    2300006: First_Floor
+    2300008: Flag_1
+    2300010: Flag_1 1
+    2300012: Flag_1 2
+    2300014: Flag_1 3
+    2300016: Flag_2
+    2300018: Flag_2 1
+    2300020: Flag_2 2
+    2300022: Flag_2 3
+    2300024: Flag_3
+    2300026: Flag_3 1
+    2300028: Flag_3 2
+    2300030: Flag_3 3
+    2300032: Flag_4
+    2300034: Flag_4 1
+    2300036: Flag_4 2
+    2300038: Flag_4 3
+    2300040: Foundation
+    2300042: Ground
+    2300044: polySurface670
+    2300046: polySurface671
+    2300048: polySurface673
+    2300050: polySurface674
+    2300052: polySurface675
+    2300054: polySurface676
+    2300056: polySurface677
+    2300058: polySurface678
+    2300060: polySurface679
+    2300062: polySurface680
+    2300064: polySurface681
+    2300066: polySurface682
+    2300068: polySurface683
+    2300070: polySurface684
+    2300072: polySurface685
+    2300074: polySurface686
+    2300076: polySurface687
+    2300078: polySurface688
+    2300080: polySurface689
+    2300082: polySurface690
+    2300084: polySurface691
+    2300086: polySurface692
+    2300088: polySurface693
+    2300090: polySurface694
+    2300092: polySurface695
+    2300094: polySurface696
+    2300096: polySurface697
+    2300098: polySurface698
+    2300100: polySurface699
+    2300102: polySurface700
+    2300104: polySurface701
+    2300106: polySurface702
+    2300108: polySurface703
+    2300110: polySurface704
+    2300112: polySurface705
+    2300114: polySurface706
+    2300116: polySurface707
+    2300118: polySurface708
+    2300120: polySurface709
+    2300122: polySurface710
+    2300124: polySurface712
+    2300126: polySurface713
+    2300128: polySurface714
+    2300130: Scaffold
+    2300132: Second_Floor
+    2300134: Wall
+    2300136: Wall 1
+    2300138: Wall 2
+    2300140: Wall 3
+    2300142: Destruction_phase_3 1
+    3300000: Carcass
+    3300002: Destruction_phase_1 1
+    3300004: Destruction_phase_2 1
+    3300006: First_Floor
+    3300008: Flag_1
+    3300010: Flag_1 1
+    3300012: Flag_1 2
+    3300014: Flag_1 3
+    3300016: Flag_2
+    3300018: Flag_2 1
+    3300020: Flag_2 2
+    3300022: Flag_2 3
+    3300024: Flag_3
+    3300026: Flag_3 1
+    3300028: Flag_3 2
+    3300030: Flag_3 3
+    3300032: Flag_4
+    3300034: Flag_4 1
+    3300036: Flag_4 2
+    3300038: Flag_4 3
+    3300040: Foundation
+    3300042: Ground
+    3300044: polySurface670
+    3300046: polySurface671
+    3300048: polySurface673
+    3300050: polySurface674
+    3300052: polySurface675
+    3300054: polySurface676
+    3300056: polySurface677
+    3300058: polySurface678
+    3300060: polySurface679
+    3300062: polySurface680
+    3300064: polySurface681
+    3300066: polySurface682
+    3300068: polySurface683
+    3300070: polySurface684
+    3300072: polySurface685
+    3300074: polySurface686
+    3300076: polySurface687
+    3300078: polySurface688
+    3300080: polySurface689
+    3300082: polySurface690
+    3300084: polySurface691
+    3300086: polySurface692
+    3300088: polySurface693
+    3300090: polySurface694
+    3300092: polySurface695
+    3300094: polySurface696
+    3300096: polySurface697
+    3300098: polySurface698
+    3300100: polySurface699
+    3300102: polySurface700
+    3300104: polySurface701
+    3300106: polySurface702
+    3300108: polySurface703
+    3300110: polySurface704
+    3300112: polySurface705
+    3300114: polySurface706
+    3300116: polySurface707
+    3300118: polySurface708
+    3300120: polySurface709
+    3300122: polySurface710
+    3300124: polySurface712
+    3300126: polySurface713
+    3300128: polySurface714
+    3300130: Scaffold
+    3300132: Second_Floor
+    3300134: Wall
+    3300136: Wall 1
+    3300138: Wall 2
+    3300140: Wall 3
+    3300142: Destruction_phase_3 1
+    4300000: Ground
+    4300002: Wall
+    4300004: First_Floor
+    4300006: Carcass
+    4300008: Second_Floor
+    4300010: Foundation
+    4300012: Flag_1
+    4300014: Flag_2
+    4300016: Flag_3
+    4300018: Flag_4
+    4300020: Scaffold
+    4300022: Destruction_phase_1
+    4300024: Flag_1
+    4300026: Flag_2
+    4300028: Wall
+    4300030: Flag_3
+    4300032: Flag_4
+    4300034: Wall
+    4300036: Destruction_phase_2
+    4300038: Flag_1
+    4300040: Flag_2
+    4300042: Flag_3
+    4300044: Flag_4
+    4300046: polySurface670
+    4300048: polySurface671
+    4300050: polySurface673
+    4300052: polySurface674
+    4300054: polySurface675
+    4300056: polySurface676
+    4300058: polySurface677
+    4300060: polySurface678
+    4300062: polySurface679
+    4300064: polySurface680
+    4300066: polySurface681
+    4300068: polySurface682
+    4300070: polySurface683
+    4300072: polySurface684
+    4300074: polySurface685
+    4300076: polySurface686
+    4300078: polySurface687
+    4300080: polySurface688
+    4300082: polySurface689
+    4300084: polySurface690
+    4300086: polySurface691
+    4300088: polySurface692
+    4300090: polySurface693
+    4300092: polySurface694
+    4300094: polySurface695
+    4300096: polySurface696
+    4300098: polySurface697
+    4300100: polySurface698
+    4300102: polySurface699
+    4300104: polySurface700
+    4300106: polySurface701
+    4300108: polySurface702
+    4300110: polySurface703
+    4300112: polySurface704
+    4300114: polySurface705
+    4300116: polySurface706
+    4300118: polySurface707
+    4300120: polySurface708
+    4300122: polySurface709
+    4300124: polySurface710
+    4300126: polySurface712
+    4300128: polySurface713
+    4300130: polySurface714
+    4300132: Flag_4
+    4300134: Flag_3
+    4300136: Flag_2
+    4300138: Flag_1
+    4300140: Wall
+    4300142: Destruction_phase_3
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
