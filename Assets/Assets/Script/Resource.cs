@@ -9,8 +9,10 @@ public class Resource : MonoBehaviour {
     Rigidbody rb;
     Collider cld;
     int defaultLayer;
+    public int value { get; private set; }
 
     void Start () {
+        value = 10;
         rb = GetComponent<Rigidbody>();
         cld = GetComponent<Collider>();
         defaultLayer = gameObject.layer;
