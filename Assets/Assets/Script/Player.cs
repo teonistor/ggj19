@@ -67,7 +67,9 @@ public class Player : MonoBehaviour {
         Resource resource = collision.collider.GetComponent<Resource>();
         if (resource != null) {
             if (resource.tag.Equals(Resource.resourceTag)) {
-                pickedUp = resource.PickUp(transform, pickedUpLocalPosition, myResourceTag);
+                if (pickedUp == null) {
+                    pickedUp = resource.PickUp(transform, pickedUpLocalPosition, myResourceTag);
+                }
             } else if (!resource.tag.Equals(myResourceTag)) {
                 // TODO
                 Debug.LogWarning("DEAD");
