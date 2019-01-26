@@ -34,6 +34,13 @@ public class SimpleCharacterControl : MonoBehaviour {
     private bool m_isGrounded;
     private List<Collider> m_collisions = new List<Collider>();
 
+    // Our modification
+    Player player;
+
+    void Start() {
+        player = GetComponent<Player>();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         ContactPoint[] contactPoints = collision.contacts;
@@ -110,10 +117,10 @@ public class SimpleCharacterControl : MonoBehaviour {
 
     private void TankUpdate()
     {
-        float v = Input.GetAxis("VerticalP2");
-        float h = Input.GetAxis("HorizontalP2");
+        float v = Input.GetAxis(player.verticalAx);
+        float h = Input.GetAxis(player.horizontalAx);
 
-        bool walk = Input.GetKey(KeyCode.LeftShift);
+        bool walk = false;// Input.GetKey(KeyCode.LeftShift);
 
         if (v < 0) {
             if (walk) { v *= m_backwardsWalkScale; }
@@ -134,18 +141,17 @@ public class SimpleCharacterControl : MonoBehaviour {
         JumpingAndLanding();
     }
 
-    private void DirectUpdate()
-    {
-        float v = Input.GetAxis("VerticalP2");
-        float h = Input.GetAxis("HorizontalP2");
+    private void DirectUpdate() {
+        float v = Input.GetAxis(player.verticalAx);
+        float h = Input.GetAxis(player.horizontalAx);
 
         Transform camera = Camera.main.transform;
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            v *= m_walkScale;
-            h *= m_walkScale;
-        }
+        //if (Input.GetKey(KeyCode.LeftShift))
+        //{
+        //    v *= m_walkScale;
+        //    h *= m_walkScale;
+        //}
 
         m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
         m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
@@ -173,11 +179,11 @@ public class SimpleCharacterControl : MonoBehaviour {
     {
         bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
 
-        if (jumpCooldownOver && m_isGrounded && Input.GetKey(KeyCode.Space))
-        {
-            m_jumpTimeStamp = Time.time;
-            m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
-        }
+        //if (jumpCooldownOver && m_isGrounded && Input.GetKey(KeyCode.Space))
+        //{
+        //    m_jumpTimeStamp = Time.time;
+        //    m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
+        //}
 
         if (!m_wasGrounded && m_isGrounded)
         {

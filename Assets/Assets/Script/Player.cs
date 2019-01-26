@@ -20,7 +20,10 @@ public class Player : MonoBehaviour {
 
     //[SerializeField] Tribe tribe; // TODO Cristi
 
-    string verticalAx, horizontalAx, throwAx, myResourceTag;
+    public string verticalAx { get; private set; }
+    public string horizontalAx { get; private set; }
+    public string throwAx { get; private set; }
+    public string myResourceTag { get; private set; }
 
     Rigidbody rb;
     Resource pickedUp;
