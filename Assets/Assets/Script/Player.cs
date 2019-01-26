@@ -47,15 +47,6 @@ public class Player : MonoBehaviour {
 
     }
 
-    
-    //function for delivering resources to tribe
-    void DeliverResources() {
-        if (this.pickedUp != null && this.pickedUp.value > 0) {
-            tribe.AddResources(this.pickedUp.value);
-            this.pickedUp = null;
-        }
-    }
-
 
     void Die () {
         this.pickedUp = null;
@@ -80,6 +71,21 @@ public class Player : MonoBehaviour {
             } else if (!resource.tag.Equals(myResourceTag)) {
                 // TODO
                 Debug.LogWarning("DEAD");
+            }
+        }
+    }
+
+    void OnTriggerEnter (Collider other) {
+        Tribe tribe = other.GetComponent<Tribe>();
+        if (tribe != null) {
+            if (tribe.Equals(this.tribe)) {
+                if (pickedUp != null) {
+                    tribe.AddResources(pickedUp.value);
+                    Destroy(pickedUp.gameObject);
+                    pickedUp = null;
+                }
+            } else {
+                print("What are you doing in the adversary's tribe...");
             }
         }
     }
