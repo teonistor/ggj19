@@ -21,9 +21,11 @@ public class PlayAreaController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isShrinking && myCollider.radius > minAreaSize)
+        if (isShrinking && this.transform.localScale.x > minAreaSize)
         {
-            myCollider.radius -= shrinkAmmount;
+            //TODO this better
+            this.transform.localScale -= new Vector3(shrinkAmmount, shrinkAmmount, shrinkAmmount);
+           // myCollider.radius -= shrinkAmmount;
         }
     }
 
