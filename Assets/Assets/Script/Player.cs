@@ -90,15 +90,15 @@ public class Player : MonoBehaviour {
     void OnTriggerEnter (Collider other) {
         Tribe tribe = other.GetComponent<Tribe>();
         if (tribe != null) {
-            if (tribe.Equals(this.tribe)) {
-                if (pickedUp != null) {
-                    tribe.AddResources(pickedUp.value);
-                    Destroy(pickedUp.gameObject);
+            //if (tribe.Equals(this.tribe)) {
+            //    if (pickedUp != null) {
+            //        tribe.AddResources(pickedUp.value);
+            //        Destroy(pickedUp.gameObject);
                     pickedUp = null;
                 }
-            } else {
-                print("What are you doing in the adversary's tribe...");
-            }
-        }
+            //} else {
+            //    print("What are you doing in the adversary's tribe...");
+            //}
+        //}
     }
 }
