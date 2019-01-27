@@ -1431,6 +1431,8 @@ MonoBehaviour:
   lives: 0
   resources: 0
   resToLifeThreshold: 0
+  livesText: {fileID: 470835772}
+  resourcesText: {fileID: 1376523180}
 --- !u!135 &961822783
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1883,6 +1885,8 @@ MonoBehaviour:
   lives: 0
   resources: 0
   resToLifeThreshold: 0
+  livesText: {fileID: 388117326}
+  resourcesText: {fileID: 788856903}
 --- !u!135 &1252119937
 SphereCollider:
   m_ObjectHideFlags: 0
