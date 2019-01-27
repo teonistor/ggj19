@@ -47,4 +47,13 @@ public class Tribe : MonoBehaviour {
 
         return false;
     }
+
+    void OnTriggerEnter (Collider other) {
+        Resource resource = other.GetComponent<Resource>();
+
+        if (resource != null) {
+            AddResources(resource.value);
+            Destroy(resource.gameObject);
+        }
+    }
 }
