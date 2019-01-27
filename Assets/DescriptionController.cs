@@ -24,5 +24,9 @@ public class DescriptionController : MonoBehaviour
         float y = Mathf.Abs(amplitudeY * Mathf.Sin(omegaY * index));
         transform.localPosition = new Vector3(0, normalY + y, 0);
         transform.Rotate(0, index * rotateSpeed, 0, Space.Self);
+
+        if (!transform.parent.tag.Equals(Resource.resourceTag)) {
+            Destroy(gameObject);
+        }
     }
 }
