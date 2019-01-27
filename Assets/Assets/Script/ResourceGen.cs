@@ -5,17 +5,21 @@ using UnityEngine;
 public class ResourceGen : MonoBehaviour {
 
     [SerializeField] GameObject[] resources;
+    [SerializeField] float firstWaitShort = 2f, firstWaitLong = 10f, waitShort = 20f, waitLong = 30f;
+    [SerializeField] int resourceValue = 15;
 
     bool spawn = true;
 
     IEnumerator Start () {
-        for (WaitForSeconds wait = new WaitForSeconds(Random.Range(2f, 10f))
-                ; ;         wait = new WaitForSeconds(Random.Range(20f, 30f))) {
+        for (WaitForSeconds wait = new WaitForSeconds(Random.Range(firstWaitShort, firstWaitLong))
+                ; ;         wait = new WaitForSeconds(Random.Range(waitShort, waitLong))) {
             yield return wait;
 
             if (spawn) {
                 spawn = false;
-                Instantiate(RandomResource(), transform, false).transform.parent = null;
+                Resource sr = Instantiate(RandomResource(), transform, false).GetComponent<Resource>();
+                sr.value = resourceValue;
+                sr.transform.parent = null;
             }
         }
     }

@@ -93,6 +93,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resources:
   - {fileID: 1075272858948700, guid: e067a7c9c1a4622449bd0be059e6d23d, type: 3}
+  firstWaitShort: 2
+  firstWaitLong: 10
+  waitShort: 20
+  waitLong: 30
+  resourceValue: 15
 --- !u!135 &3409399482637656947
 SphereCollider:
   m_ObjectHideFlags: 0

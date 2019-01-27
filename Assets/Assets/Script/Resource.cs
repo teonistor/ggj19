@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public class Resource : MonoBehaviour {
@@ -10,22 +8,15 @@ public class Resource : MonoBehaviour {
                             resourceTag = "Resource";
 
     Rigidbody rb;
-    //Collider cld;
-    //int defaultLayer;
-    public int value { get; private set; }
+    public int value;
 
     void Start () {
-        value = 10;
         rb = GetComponent<Rigidbody>();
         GetComponentInChildren<TextMesh>().text = value.ToString();
-        //cld = GetComponent<Collider>();
-        //defaultLayer = gameObject.layer;
     }
 
     internal Resource Throw (Vector3 direction) {
         transform.parent = null;
-        //cld.isTrigger = false;
-        //rb.useGravity = true;
         rb.isKinematic = false;
         rb.velocity = Vector3.RotateTowards(direction, Vector3.up, Mathf.PI / 20f, float.PositiveInfinity)
             . normalized
@@ -36,7 +27,6 @@ public class Resource : MonoBehaviour {
     }
 
     internal Resource PickUp (Transform newParent, Vector3 newLocalPosition, string newTag) {
-        //rb.useGravity = false;
         rb.isKinematic = true;
         transform.parent = newParent;
         transform.localPosition = newLocalPosition;
@@ -47,14 +37,7 @@ public class Resource : MonoBehaviour {
 
     void OnCollisionEnter (Collision collision) {
         if (collision.collider.tag == "Ground") {
-            //cld.isTrigger = true;
-            //gameObject.layer = defaultLayer;
             gameObject.tag = resourceTag;
         }
     }
-
-    //void OnTriggerEnter (Collider other) {
-
-    //}
 }
-
