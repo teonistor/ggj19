@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
     static readonly float velocityMagnitudeSafe = 1.5f;
 
-    static readonly Vector3 pickedUpLocalPosition = new Vector3(0f, 1.9f, 0f);
+    static readonly Vector3 pickedUpLocalPosition = new Vector3(0f, 1.26667f, 0f);
 
     const string verticalAxTemplate = "VerticalP{0}",
                  horizontalAxTemplate = "HorizontalP{0}",
@@ -70,7 +70,7 @@ public class Player : MonoBehaviour {
     /// <summary>
     /// Check if we collided with a resource. If it is just lying around (tagged as "Resource"), collect it; otherwise
     /// it means it was thrown by the other player and hit us
-    /// </summary>
+    /// </summary>d
     /// <param name="collision"></param>
     void OnCollisionEnter (Collision collision) {
         Resource resource = collision.collider.GetComponent<Resource>();
