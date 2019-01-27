@@ -50,7 +50,7 @@ public class Player : MonoBehaviour {
         if (tribe.UseLife()) {
             // respawn
             scc.enabled = false;
-            StartCoroutine(respawn(spawnPoint));
+            StartCoroutine(Respawn(spawnPoint));
         }
         else {
             // game over
@@ -59,7 +59,7 @@ public class Player : MonoBehaviour {
         }
     }
 
-    IEnumerator respawn(Vector3 spawnResetPoint)
+    IEnumerator Respawn(Vector3 spawnResetPoint)
     {
         //Wait a bit before transfering the player to spawn
         yield return new WaitForSeconds(2);
@@ -81,8 +81,8 @@ public class Player : MonoBehaviour {
                     pickedUp = resource.PickUp(transform, pickedUpLocalPosition, myResourceTag);
                 }
             } else if (!resource.tag.Equals(myResourceTag)) {
-                // TODO
-                Debug.LogWarning("DEAD");
+                Die();
+                Debug.LogWarning(gameObject.name + " hit by rock");
             }
         }
     }
