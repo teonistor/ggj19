@@ -1450,6 +1450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 2
   tribe: {fileID: 1252119936}
+  teamRagdoll: {fileID: 7748482373200962401, guid: c72d9fdba39eed847b4ff9f08a7e44b2,
+    type: 3}
 --- !u!1001 &780818660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2709,6 +2711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 1
   tribe: {fileID: 961822782}
+  teamRagdoll: {fileID: 1342246018515701233, guid: ee4706853a9cf2e40b51b9fbcecfff25,
+    type: 3}
 --- !u!1 &1668466326
 GameObject:
   m_ObjectHideFlags: 0
