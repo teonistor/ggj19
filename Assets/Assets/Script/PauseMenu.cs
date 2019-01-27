@@ -24,7 +24,11 @@ public class PauseMenu : MonoBehaviour {
  
     // Reload current scene
 	public void Restart () {
-		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+		//SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name); // Not with 2-scene combo
+
+		SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
+        Time.timeScale = 1f;
     }
 
 	void LateUpdate () {
