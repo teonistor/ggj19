@@ -17,6 +17,7 @@ public class Resource : MonoBehaviour {
     void Start () {
         value = 10;
         rb = GetComponent<Rigidbody>();
+        GetComponentInChildren<TextMesh>().text = value.ToString();
         //cld = GetComponent<Collider>();
         //defaultLayer = gameObject.layer;
     }
