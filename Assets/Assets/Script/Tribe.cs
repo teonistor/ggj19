@@ -7,6 +7,7 @@ public class Tribe : MonoBehaviour {
     public int lives;
     public int resources;
     public int resToLifeThreshold;
+    public Vector3 spawnPoint;
 
 	void Start () {
         lives = 5;

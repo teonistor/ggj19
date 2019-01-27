@@ -54,10 +54,20 @@ public class Player : MonoBehaviour {
         this.pickedUp = null;
         if (tribe.UseLife()) {
             // respawn
+            StartCoroutine(respawn(tribe.spawnPoint));
         }
         else {
             // game over
+            // this will notify the GameController that player is kill
+            Destroy(this.gameObject);
         }
+    }
+
+    IEnumerator respawn(Vector3 spawnResetPoint)
+    {
+        //Wait a bit before transfering the player to spawn
+        yield return new WaitForSecondsRealtime(2);
+        this.transform.position = spawnResetPoint;
     }
 
     /// <summary>
