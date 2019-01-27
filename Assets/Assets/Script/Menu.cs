@@ -14,6 +14,7 @@ public class Menu : MonoBehaviour {
     public void Play () {
         deactivateAll(titleScreen);
         SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
     }
 
     public void Rules () {
