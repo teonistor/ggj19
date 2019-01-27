@@ -106,4 +106,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isShrinking: 1
   minAreaSize: 25
-  shrinkAmmount: 0.1
+  shrinkAmmount: 0.01
