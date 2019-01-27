@@ -40,18 +40,14 @@ public class Player : MonoBehaviour {
     }
 	
 	void Update () {
-        rb.velocity = Vector3.forward * Input.GetAxis(verticalAx)
-                    + Vector3.right * Input.GetAxis(horizontalAx);
-
         if (Input.GetButtonDown(throwAx) && pickedUp != null) {
             pickedUp = pickedUp.Throw(transform.forward);
         }
-
     }
 
 
     void Die () {
-        this.pickedUp = null;
+        pickedUp = null;
         if (tribe.UseLife()) {
             // respawn
             StartCoroutine(respawn(tribe.spawnPoint));
