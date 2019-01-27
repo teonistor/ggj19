@@ -1,14 +1,37 @@
 fileFormatVersion: 2
-guid: 14210e0ace343cb4f8e708bd9e4f6809
+guid: 2124adf14a3bd0a438c0067eb995c86e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: phong12
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: TreeDiamondA
+    100000: mesh_1122585187
+    100002: mesh_1901429821
+    100004: mesh_2033411550
+    100006: mesh_394279458
+    100008: mesh_418347001
+    100010: //RootNode
+    400000: mesh_1122585187
+    400002: mesh_1901429821
+    400004: mesh_2033411550
+    400006: mesh_394279458
+    400008: mesh_418347001
+    400010: //RootNode
+    2100000: material_21___4007
+    2100002: material_22___4007
+    2300000: mesh_1122585187
+    2300002: mesh_1901429821
+    2300004: mesh_2033411550
+    2300006: mesh_394279458
+    2300008: mesh_418347001
+    3300000: mesh_1122585187
+    3300002: mesh_1901429821
+    3300004: mesh_2033411550
+    3300006: mesh_394279458
+    3300008: mesh_418347001
+    4300000: mesh_1901429821
+    4300002: mesh_2033411550
+    4300004: mesh_394279458
+    4300006: mesh_418347001
+    4300008: mesh_1122585187
   externalObjects: {}
   materials:
     importMaterials: 1
