@@ -14,13 +14,8 @@ public class Player : MonoBehaviour {
                  myResourceTagTemplate = "Player {0} resource";
 
     [SerializeField][Range(1,2)] int playerNum;
-
-    //[SerializeField] PlayerNum player;
-    //[SerializeField] LayerMask[] layerMasks;
-    //[SerializeField] Material[] materials;
-
-
-    //[SerializeField] Tribe tribe; // TODO Cristi
+    [SerializeField] Tribe tribe;
+  
 
     public string verticalAx { get; private set; }
     public string horizontalAx { get; private set; }
@@ -29,14 +24,18 @@ public class Player : MonoBehaviour {
 
     Rigidbody rb;
     Resource pickedUp;
-    [SerializeField] Tribe tribe;
+    SimpleCharacterControl scc;
+    Vector3 spawnPoint;
+
 	void Start () {
         verticalAx = string.Format(verticalAxTemplate, playerNum);
         horizontalAx = string.Format(horizontalAxTemplate, playerNum);
         throwAx = string.Format(throwAxTemplate, playerNum);
         myResourceTag = string.Format(myResourceTagTemplate, playerNum);
+        spawnPoint = transform.position;
 
         rb = GetComponent<Rigidbody>();
+        scc = GetComponent<SimpleCharacterControl>();
     }
 	
 	void Update () {
@@ -46,24 +45,26 @@ public class Player : MonoBehaviour {
     }
 
 
-    void Die () {
+    internal void Die () {
         pickedUp = null;
         if (tribe.UseLife()) {
             // respawn
-            StartCoroutine(respawn(tribe.spawnPoint));
+            scc.enabled = false;
+            StartCoroutine(respawn(spawnPoint));
         }
         else {
             // game over
             // this will notify the GameController that player is kill
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 
     IEnumerator respawn(Vector3 spawnResetPoint)
     {
         //Wait a bit before transfering the player to spawn
-        yield return new WaitForSecondsRealtime(2);
-        this.transform.position = spawnResetPoint;
+        yield return new WaitForSeconds(2);
+        transform.position = spawnResetPoint;
+        scc.enabled = true;
     }
 
     /// <summary>

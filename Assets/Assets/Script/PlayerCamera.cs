@@ -33,7 +33,9 @@ public class PlayerCamera : MonoBehaviour {
         }
     }
 
-    void LateUpdate() {
-        transform.position = player.transform.position + delta;
+    void LateUpdate () {
+        if (player) {
+            transform.position = player.position + delta;
+        }
     }
 }

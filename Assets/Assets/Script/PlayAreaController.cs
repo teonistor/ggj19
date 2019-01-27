@@ -9,15 +9,16 @@ public class PlayAreaController : MonoBehaviour
      * Players outside should be killed
      * It should shrink, once started, linearly to its minimum size
      */
-    public bool isShrinking = false;
-    public float minAreaSize = 100;
-    public float shrinkAmmount = 0.1f;
-    public SphereCollider myCollider;
+    public bool isShrinking;
+    public float minAreaSize;
+    public float shrinkAmmount;
+
+    SphereCollider myCollider;
 
     private void Start()
     {
-        myCollider.isTrigger = true; //Make sure trigger is enabled
         myCollider = this.GetComponent<SphereCollider>();
+        myCollider.isTrigger = true; //Make sure trigger is enabled
     }
 
     void FixedUpdate()
@@ -26,7 +27,7 @@ public class PlayAreaController : MonoBehaviour
         {
             //TODO this better (also we don't want y axis shrinkage)
             this.transform.localScale -= new Vector3(shrinkAmmount, 0.0f, shrinkAmmount);
-            myCollider.radius -= shrinkAmmount * 0.5f / 100;
+            myCollider.radius -= shrinkAmmount * 0.5f / transform.localScale.y;
         }
     }
 
@@ -35,12 +36,12 @@ public class PlayAreaController : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Player"))
         {
-            print("Ai murit, prostule"); //Teo approved
-            Destroy(other.gameObject);
+            print("Ai murit, prostule " + other.gameObject.name); //Teo approved
+            other.GetComponent<Player>().Die();
         }
         else
         {
-            print("Nu tu, prostule" + other.gameObject.tag); //Teo approved
+            print("Nu tu, prostule " + other.gameObject.tag); //Teo approved
         }
     }
 
