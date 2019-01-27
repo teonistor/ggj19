@@ -4,6 +4,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour {
+    static readonly float velocityMagnitudeSafe = 1.5f;
+
     static readonly Vector3 pickedUpLocalPosition = new Vector3(0f, 1.9f, 0f);
 
     const string verticalAxTemplate = "VerticalP{0}",
@@ -47,15 +49,6 @@ public class Player : MonoBehaviour {
 
     }
 
-    
-    //function for delivering resources to tribe
-    void DeliverResources() {
-        if (this.pickedUp != null && this.pickedUp.value > 0) {
-            tribe.AddResources(this.pickedUp.value);
-            this.pickedUp = null;
-        }
-    }
-
 
     void Die () {
         this.pickedUp = null;
@@ -74,12 +67,30 @@ public class Player : MonoBehaviour {
     /// <param name="collision"></param>
     void OnCollisionEnter (Collision collision) {
         Resource resource = collision.collider.GetComponent<Resource>();
-        if (resource != null) {
-            if (resource.tag.Equals(Resource.resourceTag)) {
-                pickedUp = resource.PickUp(transform, pickedUpLocalPosition, myResourceTag);
+        if (resource != null) {                
+            Rigidbody rbObject = resource.GetComponent<Rigidbody>();
+            if (resource.tag.Equals(Resource.resourceTag) && rbObject.velocity.magnitude < velocityMagnitudeSafe) {
+                if (pickedUp == null) {
+                    pickedUp = resource.PickUp(transform, pickedUpLocalPosition, myResourceTag);
+                }
             } else if (!resource.tag.Equals(myResourceTag)) {
                 // TODO
                 Debug.LogWarning("DEAD");
+            }
+        }
+    }
+
+    void OnTriggerEnter (Collider other) {
+        Tribe tribe = other.GetComponent<Tribe>();
+        if (tribe != null) {
+            if (tribe.Equals(this.tribe)) {
+                if (pickedUp != null) {
+                    tribe.AddResources(pickedUp.value);
+                    Destroy(pickedUp.gameObject);
+                    pickedUp = null;
+                }
+            } else {
+                print("What are you doing in the adversary's tribe...");
             }
         }
     }
