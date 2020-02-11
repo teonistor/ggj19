@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// Check if we collided with a resource. If it is just lying around (tagged as "Resource"), collect it; otherwise
     /// it means it was thrown by the other player and hit us
-    /// </summary>d
+    /// </summary>
     /// <param name="collision"></param>
     void OnCollisionEnter(Collision collision)
     {
@@ -101,13 +101,14 @@ public class Player : MonoBehaviour
             else if (!resource.tag.Equals(myResourceTag))
             {
                 Die();
-                Debug.LogWarning(gameObject.name + " hit by rock");
             }
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
+        // Future note: We decided that the resource will enter any tribe regardless of who is carrying it. Tribe.OnTriggerEnter takes
+        // care of score and resource destruction.
         Tribe tribe = other.GetComponent<Tribe>();
         if (tribe != null)
         {

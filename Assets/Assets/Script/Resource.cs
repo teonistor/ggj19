@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public class Resource : MonoBehaviour {
@@ -17,7 +18,7 @@ public class Resource : MonoBehaviour {
 
     internal Resource Throw (Vector3 direction) {
         transform.parent = null;
-        rb.isKinematic = false;
+        rb.constraints = RigidbodyConstraints.None;
         rb.velocity = Vector3.RotateTowards(direction, Vector3.up, Mathf.PI / 20f, float.PositiveInfinity)
             . normalized
             * throwVelocity;
@@ -27,14 +28,14 @@ public class Resource : MonoBehaviour {
     }
 
     internal Resource PickUp (Transform newParent, Vector3 newLocalPosition, string newTag) {
-        rb.isKinematic = true;
         transform.parent = newParent;
         transform.localPosition = newLocalPosition;
+        rb.constraints = RigidbodyConstraints.FreezePosition;
         tag = newTag;
 
         return this; // Asigned in Player
     }
-
+    
     void OnCollisionEnter (Collision collision) {
         if (collision.collider.tag == "Ground") {
             gameObject.tag = resourceTag;

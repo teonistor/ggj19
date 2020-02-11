@@ -21,32 +21,21 @@ public class PlayAreaController : MonoBehaviour
         myCollider.isTrigger = true; //Make sure trigger is enabled
     }
 
-    void FixedUpdate()
-    {
-        if (isShrinking && this.transform.localScale.x > minAreaSize)
-        {
-            //TODO this better (also we don't want y axis shrinkage)
-            this.transform.localScale -= new Vector3(shrinkAmmount, 0.0f, shrinkAmmount);
-            myCollider.radius -= shrinkAmmount * 0.5f / transform.localScale.y;
+    void FixedUpdate () {
+        if (isShrinking) {
+            if (transform.localScale.x < minAreaSize) {
+                isShrinking = false;
+            } else {
+                // (we don't want y axis shrinkage)
+                this.transform.localScale -= new Vector3(shrinkAmmount, 0.0f, shrinkAmmount);
+                myCollider.radius -= shrinkAmmount * 0.5f / transform.localScale.y;
+            }
         }
     }
 
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag.Equals("Player"))
-        {
-            print("Ai murit, prostule " + other.gameObject.name); //Teo approved
+    private void OnTriggerExit (Collider other) {
+        if (other.gameObject.tag.Equals("Player")) {
             other.GetComponent<Player>().Die();
         }
-        else
-        {
-            print("Nu tu, prostule " + other.gameObject.tag); //Teo approved
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        print("Rau de tot: " + other.gameObject);
     }
 }

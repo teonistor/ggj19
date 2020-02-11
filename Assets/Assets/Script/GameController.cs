@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
@@ -9,17 +7,12 @@ public class GameController : MonoBehaviour
     public GameObject playerOne;
     public GameObject playerTwo;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        print("[Game-Control] Starting game");
-        playAreaCtrl.isShrinking = true;
-    }
+    private bool deathNotYetPerformed;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    // Start is called before the first frame update
+    void Start () {
+        deathNotYetPerformed = true;
+        playAreaCtrl.isShrinking = true;
     }
 
     private void FixedUpdate()
@@ -36,9 +29,11 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void EndGame()
-    {
-        Time.timeScale = 0f;
-        gameOverOverlay.SetActive(true);
+    private void EndGame () {
+        if (deathNotYetPerformed) {
+            deathNotYetPerformed = false;
+            Time.timeScale = 0f;
+            gameOverOverlay.SetActive(true);
+        }
     }
 }

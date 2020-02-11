@@ -39,13 +39,9 @@ public class Tribe : MonoBehaviour {
     }
 
     public bool UseLife() {
-        if (lives > 0) {
-            this.lives -= 1;
-            livesText.text = "Lives: " + lives;
-            return true;
-        }
-
-        return false;
+        lives -= 1;
+        livesText.text = "Lives: " + lives;
+        return lives > 0;
     }
 
     void OnTriggerEnter (Collider other) {
